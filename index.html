@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Signup</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="signupForm">
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" class="input-field" required>
+            <button type="button" id="getCityAndStateButton" class="action-button">Get City and State</button><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" class="input-field" readonly><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" class="input-field" readonly><br>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a modern font and background color */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex; /* Center the container horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the full viewport height is covered */
+}
+
+/* Apply styles to the form container */
+.form-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 5px solid #e0e0e0;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* Style input fields and buttons */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333333;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+}
+
+.action-button {
+    width: 50%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+/* Center the text in labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 90%;
+    }
+}
